@@ -1,0 +1,121 @@
+.home-section{
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all 0.5s ease;
+  }
+  .sidebar.active ~ .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .home-section nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    z-index: 100;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+  }
+  .sidebar.active ~ .home-section nav{
+    left: 80px;
+    width: calc(100% - 60px);
+  }
+  .home-section nav .sidebar-button{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  nav .sidebar-button i{
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  .home-section nav .search-box{
+    position: relative;
+    margin-left: auto;
+    width: 40%;
+  }
+  nav .search-box input{
+    height: 85%;
+    width: 100%;
+    outline: none;
+      border: 1px solid #E5E5EC;
+      background-color: #FCFCFF;
+      border-radius: 6px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #041131;
+      opacity: 0.6;
+  }
+  form.nosubmit {
+     border: none;
+     padding: 0;
+  }
+    
+  input.nosubmit {
+      border: 1px solid #555;
+      width: 100%;
+      padding: 9px 4px 9px 40px;
+      background-position-x: 10px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-image: url("search.svg");
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+  }
+  .margin-right{
+      margin-right: 1rem;
+  }
+  .shopping {
+      position:relative;
+      display:inline-block;
+      border-right: 1px solid #0F255F;
+  }
+  .shopping img{
+      padding-top: 5px;
+  }
+  .notify-badge{
+      position: absolute;
+      left: .9rem;
+      top: 6px;
+      background: red;
+      border-radius: 50%;
+      padding: 5px;
+      height: 8px;
+      width: 8px;
+  }
+  .home-section nav .profile-details{
+    display: flex;
+    align-items: center;
+  }
+  nav .profile-details img{
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  nav .profile-details .admin_name{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+  nav .profile-details i{
+    font-size: 25px;
+    color: #333;
+  }
+  .home-section .home-content{
+    position: relative;
+    padding-top: 104px;
+    padding-left: 25px;
+  }
